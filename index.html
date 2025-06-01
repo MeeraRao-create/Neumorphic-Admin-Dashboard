@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Dashboard</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" onclick="collapseSidebar()">
+            <ul>
+                <li><a href="#" class="neumorphic"><i class="fas fa-home"></i><span>Dashboard</span></a></li>
+                <li><a href="#" class="neumorphic"><i class="fas fa-users"></i><span>Users</span></a></li>
+                <li><a href="#" class="neumorphic"><i class="fas fa-chart-bar"></i><span>Analytics</span></a></li>
+                <li><a href="#" class="neumorphic"><i class="fas fa-tasks"></i><span>Tasks</span></a></li>
+                <li><a href="#" class="neumorphic"><i class="fas fa-bell"></i><span>Notifications</span></a></li>
+                <li><a href="#" class="neumorphic"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="expand-btn" onclick="expandSidebar()">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="header neumorphic">
+                <h1>Admin Dashboard</h1>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar">
+                    <span>Jane Smith</span>
+                </div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="card neumorphic">
+                    <h3>Active Users</h3>
+                    <p>3,210</p>
+                </div>
+                <div class="card neumorphic">
+                    <h3>Total Revenue</h3>
+                    <p>$24,560</p>
+                </div>
+                <div class="card neumorphic">
+                    <h3>New Orders</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="card neumorphic">
+                    <h3>Website Visitors</h3>
+                    <p>15,789</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-card neumorphic">
+                    <h3>Monthly Sales Trend</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-card neumorphic">
+                    <h3>User Distribution</h3>
+                    <canvas id="userPieChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-card neumorphic">
+                    <h3>Website Traffic</h3>
+                    <canvas id="trafficChart"></canvas>
+                </div>
+                <div class="chart-card neumorphic">
+                    <h3>Order Status</h3>
+                    <canvas id="orderDoughnutChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-card neumorphic">
+                    <h3>Revenue by Category</h3>
+                    <canvas id="categoryBarChart"></canvas>
+                </div>
+            </div>
+            <div class="table-container neumorphic">
+                <h3>Recent Transactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>User</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>John Doe</td>
+                            <td>$150.00</td>
+                            <td>2025-06-01</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Jane Roe</td>
+                            <td>$230.50</td>
+                            <td>2025-05-31</td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Sam Smith</td>
+                            <td>$89.99</td>
+                            <td>2025-05-30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       
+</body>
+  </html>
